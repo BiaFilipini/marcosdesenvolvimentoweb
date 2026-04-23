@@ -1,0 +1,43 @@
+/* Configurações Gerais */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; padding: 40px; background-color: #f5f5f5; color: #333; }
+
+.container { 
+    background: white; 
+    border: 2px solid #ccc; 
+    margin-bottom: 60px; 
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Classes Utilitárias de Flexbox */
+.flex-row { display: flex; gap: 20px; width: 100%; }
+.flex-column-center { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px; }
+.gap-10 { gap: 10px; }
+
+/* Estilo Geral dos Slots */
+.slot { background-color: #e0e0e0; border: 1px solid #999; border-radius: 4px; }
+
+/* LAYOUT 1:*/
+.layout-1 .header-slot { height: 50px; background: #eee; margin-bottom: 20px; display: flex; align-items: center; padding: 0 15px; font-weight: bold; }
+.layout-1 .col-text { flex: 1.2; display: flex; flex-direction: column; gap: 15px; }
+.layout-1 .col-img { flex: 1; }
+.layout-1 .title { height: 100px; width: 90%; }
+.layout-1 .text { height: 80px; }
+.layout-1 .button { height: 45px; width: 180px; background-color: #0061ff; border: none; }
+.layout-1 .img-placeholder { height: 300px; background-color: #333; }
+
+/* LAYOUT 3:*/
+.news-item { display: flex; gap: 15px; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+.news-thumb { flex: 0 0 250px; height: 150px; }
+.news-content { flex: 1; height: 150px; }
+
+/* LAYOUT 5:*/
+.carousel-row { display: flex; gap: 10px; overflow: hidden; margin-bottom: 40px; }
+.movie-card { flex: 1; height: 200px; display: flex; align-items: center; justify-content: center; font-size: 2em; color: #666; }
+.grid-benefits { display: flex; flex-wrap: wrap; gap: 20px; }
+.benefit-box { flex: 1 1 calc(25% - 20px); height: 180px; min-width: 200px; background: #222; border-color: red; }
+
+/* LAYOUT 6:*/
+.portfolio-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+.shot { flex: 0 0 calc(33.33% - 20px); height: 220px; background: #fff; border: 1px solid #ddd; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
