@@ -1,0 +1,121 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --roxo-escuro: #4b0082;
+    --roxo-medio: #6a5acd;
+    --roxo-claro: #f3e5f5;
+    --roxo-destaque: #9370db;
+    --texto: #2d2d2d;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--roxo-claro);
+    color: var(--texto);
+}
+
+header {
+    background: linear-gradient(135deg, var(--roxo-escuro), var(--roxo-medio));
+    color: white;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--roxo-escuro);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--roxo-destaque);
+}
+
+
+.container-principal {
+    display: flex;
+    max-width: 1100px;
+    margin: 30px auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+
+main {
+    flex: 2.5; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section, article {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 5px solid var(--roxo-medio);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+h2, h3 {
+    color: var(--roxo-escuro);
+    margin-bottom: 15px;
+}
+
+
+aside {
+    flex: 1; 
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    height: fit-content;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+aside ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+aside li {
+    background: var(--roxo-claro);
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+
+footer {
+    background-color: var(--roxo-escuro);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+    .container-principal {
+        flex-direction: column;
+    }
+}
